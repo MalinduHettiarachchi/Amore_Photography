@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <style>
+            body {
+              background-image: url('f5.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed; 
+              background-size: 100% 100%;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="navbar">
+                <img src="bloom-new4716.logowik.com (1).jpg" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="cw-home.html">Home</a></li>
+                        <li><a href="cw-about.html">About</a></li>
+                        <li><a href="">Flower Items</a></li>
+                        <li><a href="cw-contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1>Blooms</h1>
+                    <h2>F L O W E R S</h2>
+                    <p></p>
+                   
+                </div>
+                <div class="from-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="tog-b" onclick="login()">Log In</button>
+                        <button type="button" class="tog-b" onclick="resgister()">Register</button>
+                    </div>
+                    <form id="logi" class="inputgroups1" action="login.php" method="POST">
+                        <input type="text" class="infield" placeholder="User Id" name="uidd" required>
+                        <input type="text" class="infield" placeholder="Enter Password" name="passwood" required>
+                        <input type="checkbox" class="chekbox"><span>Remember Password</span>
+                        <button type="submit" class="subutn">Log In</button> 
+                    </form>
+                    <form action="insert.php" method="POST" name ="myForm" id="regi" class="inputgroups2">
+                        <input type="text" class="infield" placeholder="Name" name="na" required>
+                        <input type="text" class="infield" placeholder="Tep No" name="tn" required>
+                        <input type="email" class="infield" placeholder="Email" name="em" required>
+                        <input type="text" class="infield" placeholder="User Id" name="ui" required>
+                        <input type="text" class="infield" placeholder="Enter Password" name="pw" required>
+                        <input type="checkbox" class="chekbox"><span>I agree to the terma & condition.</span>
+                        <button type="submit" class="subutn" name="reg">Register</button> 
+                    </form>
+                </div>
+            </div>
+                <div class="social"></div>
+                <script>
+                    var x =document.getElementById("logi");
+                    var y =document.getElementById("regi");
+                    var z =document.getElementById("btn");
+        
+                    function resgister(){
+                        x.style.left = "-400px";
+                        y.style.left = "50px";
+                        z.style.left = "110px";
+                    }
+                    function login(){
+                        x.style.left = "10px";
+                        y.style.left = "300px";
+                        z.style.left = "0px";
+                    }
+                </script>
+                
+                <div class="card1">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body">
+                      <div class="footer">
+                        <div class="social">
+                          <a href=""><i class="fa-brands fa-facebook"></i> </a><br>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a><br>
+                          <a href=""><i class="fa-brands fa-twitter"></i></a><br>
+                          <a href=""><i class="fa-brands fa-google-plus"></i></a><br>
+                          
+                        </div>
+                      </div>
+                     
+                      <div class="footerbottom">
+                        <p>Copyright &copy;2024 design by NethmiD</span></p>
+                      </div>
+                    </div>
+                  </div>
+               
+           
+    </body>
+</html>
